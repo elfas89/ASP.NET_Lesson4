@@ -16,12 +16,12 @@ namespace Less_4
 
         protected void RadioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            Label1.Text = "r1";
+            RadioButton2.Checked = false;
         }
 
         protected void RadioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            Label1.Text = "r2";
+            RadioButton1.Checked = false;
 
         }
 
@@ -34,13 +34,13 @@ namespace Less_4
 
             if (RadioButton1.Checked)
             {
-                RadioButton2.Checked = false;
+                //RadioButton2.Checked = false;
                 Label1.Text = "Вы выбрали мужской пол";
             }
 
             if (RadioButton2.Checked)
             {
-                RadioButton1.Checked = false;
+                //RadioButton1.Checked = false;
                 Label1.Text = "Вы выбрали женский пол";
             }
         }
